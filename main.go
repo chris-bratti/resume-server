@@ -26,15 +26,6 @@ var personalInfo PersonalInfo
 
 func homePage(page string) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        /*
-		cookie, _ := r.Cookie("authelia_session")
-		if cookie != nil {
-			http.Error(w, "You are not authorized to view this site", http.StatusForbidden)
-		}else {
-			var tpl = template.Must(template.ParseFiles("./html/home.html"))
-			tpl.Execute(w, nil)
-		}
-		*/
 
 		var tpl = template.Must(template.ParseFiles("./html/" + page + ".html"))
 		err := tpl.Execute(w, personalInfo)
@@ -46,16 +37,6 @@ func homePage(page string) http.HandlerFunc {
 }
 
 func formHandler(w http.ResponseWriter, r *http.Request){
-	/*
-		cookie, _ := r.Cookie("authelia_session")
-		if cookie != nil {
-			http.Error(w, "You are not authorized to view this site", http.StatusForbidden)
-		}else {
-			var tpl = template.Must(template.ParseFiles("./html/home.html"))
-			tpl.Execute(w, nil)
-		}
-		*/
-
 	tmpl := template.Must(template.ParseFiles("./html/contact.html"))
 	
 	if r.Method != http.MethodPost {
