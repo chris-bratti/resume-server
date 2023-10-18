@@ -1,5 +1,5 @@
-go 1.21.3
+module main
 
-module github.com/joho/godotenv/cmd/godotenv
+go 1.21.3
 
 require github.com/joho/godotenv v1.5.1 // indirect
