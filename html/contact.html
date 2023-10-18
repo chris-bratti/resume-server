@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhys Bratti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='/assets/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="custom-background">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
+        <a href="/about-site" class="w3-bar-item w3-button">THIS SITE</a>
+      </div>
+    </div>
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
+  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
+  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
+  <a href="/about-site" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT SITE</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
+</div>
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1500px;margin-top:100px">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+  
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="margin-top: 75px;">
+        <div class="w3-container custom-text-body" style="text-align: Left;">
+            <div class="contact" style="margin-top: 25px;margin-bottom: 25px">
+                <h3>Send me a message!</h3>
+                <form method="POST">
+                    <label for="fname">First Name <span style="color: red">*</span></label>
+                    <input class="contact" type="text" id="fname" name="firstname" placeholder="First name" required>
+
+                    <label for="lname">Last Name <span style="color: red">*</span></label>
+                    <input class="contact" type="text" id="lname" name="lastname" placeholder="Last name" required>
+
+                    <label for="email">Email <span style="color: red">*</span></label><br/>
+                    <input class="contact" type="email" id="eml" name="email" placeholder="example@example.com" required><br />
+ 
+                    <label>Message:</label><br />
+                    <textarea class="contact" name="message" placeholder="You're the best candidate we've ever seen..."></textarea><br />
+                    {{if .Success}}
+                        <p class="w3-text-pink">Your message has been sent. I'll get back to you as soon as possible!</p>
+                    {{else}}
+                        <input class="w3-button w3-pink" type="submit" value="Send message">
+                    {{end}}
+                    </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="margin-top:25px">
+      <div class="w3-container custom-text-body" style="text-align: left;">
+          <h2>Or reach me here!</h2>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-pink"></i>{{ .Phone }}</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-pink"></i>{{ .Email }}</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-pink"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
+      </div>
+  </div>
+    
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  /*
+  $.get("/html/nav.html", function(data){
+    $("#navigation").replaceWith(data);
+  });
+  */
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
+
+</body>
+</html>

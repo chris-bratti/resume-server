@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhys Bratti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='/assets/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="custom-background">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
+        <a href="/about-site" class="w3-bar-item w3-button">THIS SITE</a>
+      </div>
+    </div>
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
+  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
+  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
+  <a href="/about-site" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT SITE</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1800px;margin-top:100px">
+
+  
+
+  <!-- The Grid -->
+  <div  style="margin-top: 75px;height: 1000px;background-image: url('/assets/welcome_photo.jpg');background-position: center;background-size: cover;">
+
+    <div class="w3-container custom-text-body" style="height: 100px;background-color: rgba(38, 38, 38, .75);background-blend-mode: lighten;">
+      <h1 class="w3-text-pink">Rhys Bratti</h1>
+      <h3 class="small">Software Engineer</h3>
+    </div>
+  
+    <div class="custom-dynamic-card" style="margin-top: 715px">
+      <div class="custom-dynamic-card-inner">
+        <div class="custom-dynamic-card-front">
+          <h1 style="margin-top: 50px;">Experience</h1>
+          <p>(hover to flip)</p>
+        </div>
+        <div class="custom-dynamic-card-back">
+          <h3 style="margin-top: 100px;">7 years experiece developing with Java</h3>
+          <h3>5 years experience as a software engineer</h3>
+          <h3>4 years experience developing RESTful APIs</h3> 
+          <h3>2 years experience with Spring Boot</h3>
+          <a class="medium-text" href="/resume">View my full resume</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-dynamic-card" style="margin-top: 715px">
+      <div class="custom-dynamic-card-inner">
+        <div class="custom-dynamic-card-front">
+          <h1 style="margin-top: 50px;">Seeking</h1>
+          <p>(hover to flip)</p>
+        </div>
+        <div class="custom-dynamic-card-back">
+          <h3 style="margin-top: 100px;">A team I can rely on</h3>
+          <h3>An environment to learn and grow</h3>
+          <h3>A product I can contribute positively to</h3>
+          <h3>Technologies I'm not already comfortable with</h3>
+          <a class="medium-text" href="/about-me">Learn more about me and what I'm looking for</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-dynamic-card" style="margin-top: 715px">
+      <div class="custom-dynamic-card-inner">
+        <div class="custom-dynamic-card-front">
+          <h1 style="margin-top: 50px;">Contact</h1>
+          <p>(hover to flip)</p>
+        </div>
+        <div class="custom-dynamic-card-back">
+          <h3 style="margin-top: 100px;">Email: <a class="large-text" href="mailto:rhysbratti@gmail.com">{{printf "%s" .Email}}</a> </h3>
+          <h3>Phone: {{printf "%s" .Phone}}</h3>
+          <h3>Linkedin: <a class="large-text" href="https://www.linkedin.com/in/chrisbratti" target="_blank">chrisbratti</a></h3> 
+          <a class="medium-text" href="/contact">Contact me</a>
+        </div>
+      </div>
+    </div>
+    
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container custom-background w3-center w3-margin-top w3-text-pink">
+  <p class="custom-text-body">Find me on Linkedin</p>
+  <i class="fa fa-linkedin w3-text-pink w3-hover-opacity"></i>
+  <p class="custom-text-body">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  /*
+  $.get("/html/nav.html", function(data){
+    $("#navigation").replaceWith(data);
+  });
+  */
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
+
+</body>
+</html>

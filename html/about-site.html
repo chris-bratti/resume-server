@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhys Bratti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='/assets/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="custom-background">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
+        <a href="#" class="w3-bar-item w3-button">THIS SITE</a>
+      </div>
+    </div>
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
+  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
+  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
+</div>
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1500px;margin-top:100px">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="margin-top: 75px;width: 50%;padding-bottom: 15px;">
+        <div class="w3-container custom-text-body" style="text-align: Left;">
+            <h2>How is this site running?</h2>
+            <a class="medium-text" href="/contact">Questions/comments? Feel free to contact me!</a>
+        </div>
+    </div>
+
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="padding-bottom: 25px;">
+        <img  src="../assets/docker.png" style="width:33.33%;right: 200px;position: absolute;margin-top: 15px;">
+        <div class="w3-container custom-text-body" style="text-align: Left;">
+            <h2 class="w3-text-pink">Golang Web App</h2>
+            <br>
+            <h4 class="small">Go HTTP Server</h4>
+            <hr class="thinline">
+            <h5>- A Golang HTTP server backend handling routing</h5>
+            <h5>- HTML, CSS, Javascript/JQuery on the front end</h5>
+            <h5>Big thanks to w3 schools for their <a class="medium-text" href="https://www.w3schools.com/w3css/w3css_templates.asp" target="_blank">HTML & CSS templates</a></h5>
+            <h5>HTML and CSS are NOT my strong suits, these templates helped make this process a lot easier</h5>
+            <br>
+            <h4 class="small">Docker</h4>
+            <hr class="thinline">
+            <h5>- Golang webserver hosted in docker container</h5>
+            <h5>- Other services, such as Authelia and Nginx Proxy Manager, also hosted in separate Docker containers</h5>
+            <h5>- Portainer running to more easily manage multiple containers</h5>
+        </div>
+    </div>
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="padding-bottom: 25px;">
+        <img  src="../assets/nginx.png" style="width:33.33%;right: 200px;position: absolute">
+        <div class="w3-container custom-text-body" style="text-align: Left;">
+            <h2 class="w3-text-pink">Hosting</h2>
+            <br>
+            <h4 class="small">Nginx Proxy Manager + Cloudflare</h4>
+            <hr class="thinline">
+            <h5>- Nginx Proxy Manager running in docker container on seperate Ubuntu Server VM</h5>
+            <h5>- NPM acts as reverse proxy, adding security and routing clients to the appropriate server</h5>
+            <h5>- Cloudflare DNS routes traffic to my IP as well as implementing security like DDoS protection</h5>
+            <h6>Find out more about Nginx Proxy Manager <a class="medium-text" href="https://nginxproxymanager.com/" target="_blank">on their site</a></h6>
+            <br>
+            <h4 class="small">Authelia</h4>
+            <hr class="thinline">
+            <h5>- Authelia authentication server running in Docker container</h5>
+            <h5>- Paired with Ngninx Proxy Manager to handle authentication and authorization</h5>
+            <h5>- Can also implement Multi-Factor Auth</h5>
+            <h5>- Can be used for SSO for top level domains as well as all subdomains</h5>
+            <h6>Find out more about Authelia <a class="medium-text" href="https://www.authelia.com/" target="_blank">on their site</a></h6>
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="padding-bottom: 25px;">
+        <img  src="../assets/linux.png" style="width:33.33%;right: 200px;margin-top: 25px;position: absolute">
+        <div class="w3-container custom-text-body" style="text-align: Left;">
+            <h2 class="w3-text-pink">Server</h2>
+            <br>
+            <h4 class="small">Ubuntu Server VM</h4>
+            <hr class="thinline">
+            <h5>- Docker containers running on Ubuntu Server VM</h5>
+            <h5>- Nginx Proxy Manager running on separate Ubuntu Server VM</h5>
+            <h5>- All developed and configured remotely with Visual Studio Code docker server</h5>
+            <h5>- Remote maintenaince of Docker containers with Portainer</h5>
+            <h6>Check out <a class="medium-text" href="https://github.com/coder/code-server" target="_blank">VS code server</a> for developing on remote servers</h6>
+            <h6>Check out <a class="medium-text" href="https://github.com/portainer/portainer" target="_blank">Portainer</a> for handling multiple Docker containers easily</h6>
+            <br>
+            <h4 class="small">Proxmox VE</h4>
+            <hr class="thinline">
+            <h5>- Both Ubuntu VMs (one personal one for this site!) hosted and managed inside Proxmox instance</h5>
+            <h5>- Proxmox also runs things for my home network, like PiHole</h5>
+            <br>
+            <h4 class="small">Mini PC</h4>
+            <hr class="thinline">
+            <h5>- Proxmox running bare metal on a mini-pc in my office</h5>
+        </div>
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  /*
+  $.get("/html/nav.html", function(data){
+    $("#navigation").replaceWith(data);
+  });
+  */
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
+
+</body>
+</html>

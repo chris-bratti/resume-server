@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhys Bratti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='/assets/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="custom-background">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
+        <a href="/about-site" class="w3-bar-item w3-button">THIS SITE</a>
+      </div>
+    </div>
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
+  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
+  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
+  <a href="/about-site" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT SITE</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1500px;margin-top:100px">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="custom-card-background custom-text-body w3-card-4" style="margin-top:100px">
+        <div class="w3-display-container">
+          <img src="../assets/resume_picture.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container custom-card-background">
+            <h2 class="custom-text-body">Rhys Bratti</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-pink"></i>Softare Engineer, Senior Consultant</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-pink"></i>Charlotte, NC</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-pink"></i>{{printf "%s" .Email}}</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-pink"></i>{{printf "%s" .Phone}}</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-pink"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-pink"></i>Skills</b></p>
+          <ul class="w3-ul">
+            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">code</i> Java, Python, Bash</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">bug_report</i> jUnit, AssertJ</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">api</i> Spring Boot, RESTful APIs</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">terminal</i> Docker, Git, Github</li>
+          </ul>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird" style="max-width:1200px;margin-top:100px">
+    
+      <div class="w3-container w3-card custom-card-background w3-margin-bottom">
+        <h2 class="custom-text-body w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Work Experience</h2>
+        <div class="w3-container custom-text-body">
+          <h4 class="w3-text-pink"><b>Booz Allen Hamilton</b></h4>
+          <h6 class="w3-opacity small"><b>Software Engineer, Senior Consultant</b></h6>
+          <h6 class="w3-opacity small"><b>Software Engineer</b></h6>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Aug 2021- <span class="w3-tag w3-pink w3-round">Current</span></h6>
+          <ul>
+            <li><span class="w3-text-pink">Develop</span> and support Spring Boot RESTful APIs for VA contracts</li>
+            <li><span class="w3-text-pink">Collaborate</span> with scrum team to drive business growth and client satisfaction through delivery of fully-tested products</li>
+            <li><span class="w3-text-pink">Analyze</span> user story requirements to create scalable and efficient code</li>
+            <li><span class="w3-text-pink">Handle</span> large scale functionality implementation as well as code architecture restructuring</li>
+            <li><span class="w3-text-pink">Spearheaded</span> load testing efforts using Gw3 fa-linkdinibana to allow for performance monitoring and alerting</li>
+            <li><span class="w3-text-pink">Successfully</span> migrated several API's from Kubernetes to D2 to allow for a smoother deployment process</li>
+          </ul>
+          <hr>
+        </div>
+
+        <div class="w3-container custom-text-body">
+          <h4 class="w3-text-pink"><b>The Hartford</b></h4>
+          <h6 class="w3-opacity small"><b>Associate Software Engineer</b></h6>
+          <h6 class="w3-opacity small"><b>Special Applications Developer</b></h6>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Jan 2019 - Aug 2021</h6>
+          <ul>
+            <li><span class="w3-text-pink">Supported</span> production of core insurance policy management application, PolicyCenter Developed new functionality to allow PolicyCenter to be a seamless user experience</li>
+            <li><span class="w3-text-pink">Integrated</span> PolicyCenter with other Hartford application through REST APIs</li>
+            <li><span class="w3-text-pink">Created</span> automated unit tests for APIs with Karate testing</li>
+            <li><span class="w3-text-pink">Diagnosed</span> bugs and defects to improve code design</li>
+            <li><span class="w3-text-pink">Collaborated</span> with Scrum Team </li>
+          </ul>
+        </div>
+      </div>
+              
+    <div class="w3-container w3-card custom-card-background">
+      <h2 class="custom-text-body w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Education</h2>
+        <div class="w3-container custom-text-body">
+          <h4 class="w3-text-pink"><b>University of North Carolina at Charlotte</b></h4>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Graduated <span class="w3-text-pink">2018</span></h6>
+          <p>Bachelor's of Computer Science, Artificial Intelligence</p>
+          <hr>
+        </div>
+        <div class="w3-container custom-text-body">
+          <h4 class="w3-text-pink"><b>Rowan Cabarrus Community College</b></h4>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Graduated <span class="w3-text-pink">2016</span></h6>
+          <p>Associate's of Science</p>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container custom-card-background w3-center w3-margin-top w3-text-pink">
+  <p class="custom-text-body">Find me on Linkedin</p>
+  <i class="fa fa-linkedin w3-text-pink w3-hover-opacity"></i>
+  <p class="custom-text-body">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  /*
+  $.get("/html/nav.html", function(data){
+    $("#navigation").replaceWith(data);
+  });
+  */
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
+
+</body>
+</html>

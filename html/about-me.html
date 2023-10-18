@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhys Bratti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='/assets/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="custom-background">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
+        <a href="/about-site" class="w3-bar-item w3-button">THIS SITE</a>
+      </div>
+    </div>
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
+  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
+  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
+  <a href="/about-site" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT SITE</a>
+  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
+</div>
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1800px;margin-top:100px;">
+
+  <!-- The Grid -->
+  <div  style="margin-top: 75px">
+
+    <div class="w3-pink w3-card" style="width: 300px; height: 3125px;position: absolute;z-index: -999"></div>
+
+    <div class="w3-container" style="height: 50px;background-color: transparent;"></div>
+
+    <div class="w3-container w3-card custom-card-background custom-text-body" style="height: auto;margin-left: 25px;margin-bottom: 10px;width: 100%;text-align: left;">
+      <h1>About me</h1>
+      <button class="w3-button w3-pink" id="toggle-cards">Professional</button>
+      <p class="small">Click to swap</p>
+    </div>
+
+    <div class="about-dynamic-card" style="margin-left:25px">
+      <div class="about-dynamic-card-inner">
+        <div class="about-dynamic-card-front">
+          <div class="right-image" style="background-image: url('/assets/developer.jpg');background-position: left;background-size: cover;">
+          </div>
+          <div class="left-text" style="background-position: center;background-size: cover;">
+            <h1>Experience</h1>
+            <h3><span class="w3-text-pink">8 years</span> of programming experience</h3>
+            <h4>- After starting with C++, I've used Python, Ruby, Bash, Go, and Java</h4>
+            <h3><span class="w3-text-pink">7 years</span> of experience using Java</h3>
+            <h4>- Java has been my main language since my first semester at UNCC, and I've used it in all my professional positions</h4>
+            <h3><span class="w3-text-pink">5 years</span> of professional experience</h3>
+            <h4>- Starting in January of 2019 at The Hartford insurance company, I know what it takes to thrive in an enterprise environment</h4>
+            <h3><span class="w3-text-pink">4 years</span> of experience developing RESTful APIs</h3>
+            <h4>- Migrated The Hartford's PolicyCenter SOAP services to RESTful services</h4>
+            <h4>- All of my time at Booz Allen has been spent on the API project, developing and improving their RESTful APIs</h4>
+            <h3><span class="w3-text-pink">2 years</span> of experience developing with Sprint Boot</h3>
+            <h4>- My team oversees four RESTful APIS, all written with Spring Boot & integrated with Swagger</h4>
+          </div>
+        </div>
+        <div class="about-dynamic-card-back">
+          <div class="left-image" style="background-image: url('/assets/gus.jpg');background-position: center;background-size: cover;">
+          </div>
+          <div class="right-text" style="background-position: center;background-size: cover;">
+            <h1>Maried and Dogs</h1>
+            <h3>Got wife and dogs</h3>
+            <h3>balh blhal bhalsdjfeifjaiojapiovjaije efjeiadj vidjf eiaj vidjfeaf feafvvaefefaeffv</h3>
+            <h3>asdf vjdf eijaf vija ifje fkajlfl vjifjeoajlijeif q fjdfiajefjdfj adijdij</h3>
+            <h3>fdufiedjv iwjef dfjcvijdf wjfjd ejf ief jd dfije fwiejf vjv vjdiwejfpq jdfjd fv</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-dynamic-card" style="margin-left:25px">
+      <div class="about-dynamic-card-inner">
+        <div class="about-dynamic-card-front">
+          <div class="left-image" style="background-image: url('/assets/terminal.png');background-position: left;background-size: cover;">
+          </div>
+          <div class="right-text" style="background-position: center;background-size: cover;">
+            <h1>My Roles</h1>
+            <h3><span class="w3-text-pink">Implementation</span></h3>
+            <h4>- When it comes to handling large scale refactoring, re-architecture, or new feature implementation, I'm the go-to member of my team</h4>
+            <h3><span class="w3-text-pink">Test Driven Development</span></h3>
+            <h4>- Through Unit and Integration tests, I work to ensure that our code base reaches a minimum 95% code coverage</h4>
+            <h3><span class="w3-text-pink">Automation</span></h3>
+            <h4>- Bash scripts, CRON jobs, and occasionaly python: I am awlays looking for ways to automate & improve our day to day processes</h4>
+            <h3><span class="w3-text-pink">Integration</span></h3>
+            <h4>- Collaborating with other teams to design integration plans is one of the more interesting parts of my job</h4>
+          </div>
+        </div>
+        <div class="about-dynamic-card-back">
+          <div class="right-image" style="background-image: url('/assets/benji.jpg');background-position: center;background-size: cover;">
+          </div>
+          <div class="left-text" style="background-position: center;background-size: cover;">
+            <h1>Maried and Dogs</h1>
+            <h3>Got wife and dogs</h3>
+            <h3>balh blhal bhalsdjfeifjaiojapiovjaije efjeiadj vidjf eiaj vidjfeaf feafvvaefefaeffv</h3>
+            <h3>asdf vjdf eijaf vija ifje fkajlfl vjifjeoajlijeif q fjdfiajefjdfj adijdij</h3>
+            <h3>fdufiedjv iwjef dfjcvijdf wjfjd ejf ief jd dfije fwiejf vjv vjdiwejfpq jdfjd fv</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-dynamic-card" style="margin-left:25px">
+      <div class="about-dynamic-card-inner">
+        <div class="about-dynamic-card-front">
+          <div class="right-image" style="background-image: url('/assets/company.jpg');background-position: left;background-size: cover;">
+          </div>
+          <div class="left-text" style="background-position: center;background-size: cover;">
+            <h1>What am I looking for?</h1>
+            <h3><span class="w3-text-pink">A role</span> that challenges me</h3>
+            <h4>- As a fast learner, I like to put my skills to the test picking up new languages and technologies.</h4>
+            <h3><span class="w3-text-pink">A team</span> that works cohesively</h3>
+            <h4>- I thrive in a team environment that prioritizes growth and transparent communication.</h4>
+            <h3><span class="w3-text-pink">A company</span> that ??</h3>
+            <h4>- A good work-life balance is extremely important</h4>
+            <h4>- The best motivation is a company that values their employees</h4>
+            <h3><span class="w3-text-pink">A product</span> that is constantly improving</h3>
+            <h4>- I seek out products that allow me to be a part of building something new</h4>
+            <h4>- New feature implementation being one of my strongest skill sets</h4>
+          </div>
+        </div>
+        <div class="about-dynamic-card-back">
+          <div class="left-image" style="background-image: url('/assets/northern-lights.jpg');background-position: center;background-size: cover;">
+          </div>
+          <div class="right-text" style="background-position: center;background-size: cover;">
+            <h1>Maried and Dogs</h1>
+            <h3>Got wife and dogs</h3>
+            <h3>balh blhal bhalsdjfeifjaiojapiovjaije efjeiadj vidjf eiaj vidjfeaf feafvvaefefaeffv</h3>
+            <h3>asdf vjdf eijaf vija ifje fkajlfl vjifjeoajlijeif q fjdfiajefjdfj adijdij</h3>
+            <h3>fdufiedjv iwjef dfjcvijdf wjfjd ejf ief jd dfije fwiejf vjv vjdiwejfpq jdfjd fv</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-dynamic-card" style="margin-left:25px">
+      <div class="about-dynamic-card-inner">
+        <div class="about-dynamic-card-front">
+          <div class="left-image" style="background-image: url('/assets/northern-lights.jpg');background-position: left;background-size: cover;">
+          </div>
+          <div class="right-text" style="background-position: center;background-size: cover;">
+            <h1>What are you looking for?</h1>
+            <h3><span class="w3-text-pink">An employee</span> that is motivated</h3>
+            <h4>- Somethign here something here somethign here</h4>
+            <h3><span class="w3-text-pink">A team member</span> that collaborates with others</h3>
+            <h4>- Good communication blah blah blah</h4>
+            <h3><span class="w3-text-pink">A developer</span> who isn't afraid to be wrong</h3>
+            <h4>- Sometimes the first step in innovation is finding out what <b>doesn't</b> work</h4>
+            <h4>- Learning and growing are never comfortable processes</h4>
+            <h3><span class="w3-text-pink">A professional</span> who is eager to contribute to something awesome</h3>
+            <h4>- </h4>
+            <h2 class="w3-text-pink">Do I fit the bill?</h2>
+            <a class="medium-text" href="/contact">Contact me today</a>
+          </div>
+        </div>
+        <div class="about-dynamic-card-back">
+          <div class="right-image" style="background-image: url('/assets/music.jpg');background-position: center;background-size: cover;">
+          </div>
+          <div class="left-text" style="background-position: center;background-size: cover;">
+            <h1>Maried and Dogs</h1>
+            <h3>Got wife and dogs</h3>
+            <h3>balh blhal bhalsdjfeifjaiojapiovjaije efjeiadj vidjf eiaj vidjfeaf feafvvaefefaeffv</h3>
+            <h3>asdf vjdf eijaf vija ifje fkajlfl vjifjeoajlijeif q fjdfiajefjdfj adijdij</h3>
+            <h3>fdufiedjv iwjef dfjcvijdf wjfjd ejf ief jd dfije fwiejf vjv vjdiwejfpq jdfjd fv</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  /*
+  $.get("/html/nav.html", function(data){
+    $("#navigation").replaceWith(data);
+  });
+  */
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  $(function(){
+    $('#toggle-cards').on('click',function(){
+       $('.about-dynamic-card').toggleClass('toggled');
+       if($(this).text() == "Personal"){
+          $(this).text("Professional");
+       }else {
+          $(this).text("Personal");
+       }
+    });
+  });
+
+
+  </script>
+
+</body>
+</html>

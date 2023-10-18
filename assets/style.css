@@ -1,0 +1,201 @@
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+/* Colors */
+.custom-background,.custom-background:hover{color:#000!important;background-color:#1a1a1a!important}
+.custom-card-background,.custom-card-background:hover{color:#000!important;background-color:#262626!important}
+.custom-text-body,.custom-text-body:hover{color:#d9d9d9!important}
+
+.right-image {
+  position: absolute;
+  right: 10px;
+  width: 33.3333%;
+  margin: 10px;
+  height: 95%;
+}
+
+.right-text{
+  position: absolute;
+  right: 10px;
+  width: 62%;
+  margin: 10px;
+  height: 95%;
+  text-align: left;
+}
+
+.left-image {
+  position: absolute;
+  left: 10px;
+  width: 33.3333%;
+  margin: 10px;
+  height: 95%;
+}
+
+.left-text{
+  position: absolute;
+  left: 10px;
+  width: 66.666667%;
+  margin: 10px;
+  height: 95%;
+  text-align: left;
+}
+
+
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+h6.small {
+  line-height: 0.7;
+}
+
+h3.small {
+  line-height: 0.3;
+}
+
+h4.small {
+  line-height: 0.3;
+}
+
+h1.small {
+  line-height: 0.3;
+}
+
+p.small {
+  line-height: 0.7;
+}
+
+hr.thinline {
+  line-height: 07;
+  width: 35%;
+}
+
+.about-dynamic-card {
+  background-color: transparent;
+  width: 100%;
+  height: 700px;
+  float: left;
+  perspective: 1000px;
+  padding: 10px 0px;
+}
+
+.about-dynamic-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.about-dynamic-card.toggled .about-dynamic-card-inner {
+  transform: rotateY(180deg);
+}
+
+.about-dynamic-card-front, .about-dynamic-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.about-dynamic-card-front {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.about-dynamic-card-back {
+  background-color: #262626;
+  color: #d9d9d9;
+  transform: rotateY(180deg);
+}
+
+.about-dynamic-card-back span{
+  align-self: flex-end;
+}
+
+
+
+.custom-dynamic-card {
+  background-color: transparent;
+  width: 33.3333%;
+  height: 500px;
+  float: left;
+  perspective: 1000px;
+  padding: 0 10px;
+}
+
+.custom-dynamic-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.custom-dynamic-card:hover .custom-dynamic-card-inner {
+  transform: rotateY(180deg);
+}
+
+.custom-dynamic-card-front, .custom-dynamic-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.custom-dynamic-card-front {
+  background-color: #262626;
+  color: #e91e63;
+}
+
+.custom-dynamic-card-back {
+  background-color: #e91e63;
+  color: #d9d9d9;
+  transform: rotateY(180deg);
+}
+
+.custom-dynamic-card-back span{
+  align-self: flex-end;
+}
+
+span.centered {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+a.large-text {
+  font-size: 25px;
+}
+
+a.medium-text {
+  font-size: 17px;
+}
+
+a.medium-ish-text {
+  font-size: 20px;
+}
+
+input.contact, textarea.contact{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #404040;
+  color: #d9d9d9;
+}
+
+div.contact {
+  border-radius: 5px;
+  background-color: #333333;
+  padding: 20px;
+}
