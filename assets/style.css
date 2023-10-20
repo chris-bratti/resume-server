@@ -182,6 +182,24 @@ a.medium-ish-text {
   font-size: 20px;
 }
 
+h1.extra-large {
+  font-size: 75px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('/media/home_photo.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 input.contact, textarea.contact{
   width: 100%;
   padding: 12px 20px;
