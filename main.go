@@ -121,14 +121,17 @@ func main() {
 	fs := justFilesFilesystem{http.Dir("html")}
 
 	assets := justFilesFilesystem{http.Dir("assets")}
+	media := justFilesFilesystem{http.Dir("media")}
 
 	assetsFileServer := http.FileServer(assets)
+	mediaFileServer := http.FileServer(media)
 
 	fileServer := http.FileServer(fs)
 
 	mux := http.NewServeMux()
 	mux.Handle("/html/", http.StripPrefix("/html/", fileServer))
 	mux.Handle("/assets/", http.StripPrefix("/assets/", assetsFileServer))
+	mux.Handle("/media/", http.StripPrefix("/media/", mediaFileServer))
 	mux.HandleFunc("/", homePage("home"))
 	mux.HandleFunc("/resume", homePage("resume"))
 	mux.HandleFunc("/home", homePage("home"))
