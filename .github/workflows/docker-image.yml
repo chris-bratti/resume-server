@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rhysbratti/resume-server:latest
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/resume-server:latest
