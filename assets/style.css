@@ -30,12 +30,13 @@
 }
 
 .left-text{
-  position: absolute;
+  position: inherit;
   left: 10px;
   width: 66.666667%;
   margin: 10px;
   height: 95%;
   text-align: left;
+  padding-right:125px
 }
 
 
