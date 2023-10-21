@@ -174,6 +174,35 @@ hr.thinline {
   align-self: flex-end;
 }
 
+.dynamic-card-text {
+  padding: 30px;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .custom-dynamic-card{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-top: 10px;
+  }
+  .dynamic-card-text{
+    padding: 10px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .custom-dynamic-card{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-top: 10px;
+  }
+  .dynamic-card-text{
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+
 span.centered {
   display: inline-block;
   vertical-align: middle;

@@ -106,7 +106,7 @@ func sendEmail(contactDetails ContactDetails) error{
 
 func main() {
 
-	err := godotenv.Load("./env/.env")
+	err := godotenv.Load("../env/.env")
 	if err != nil {
 		log.Println("Error loading .env file")
 	}
