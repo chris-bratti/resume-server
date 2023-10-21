@@ -5,22 +5,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel='stylesheet' href='/assets/style.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Roboto|Karma">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 </head>
-<body class="custom-background">
+<body class="parallax">
 
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card">
+  <div class="w3-bar custom-nav w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
@@ -45,77 +44,78 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
 </div>
 
+
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1800px;margin-top:100px">
-
+<div class=" w3-margin-top" style="margin-top:100px">
   
-
   <!-- The Grid -->
-  <div  style="margin-top: 75px;height: 1000px;background-image: url('/media/welcome_photo.jpg');background-position: center;background-size: cover;">
+  <div  style="margin-top: 45px;height: 1000px;background-color: transparent;">
 
-    <div class="w3-container custom-text-body" style="height: 100px;background-color: rgba(38, 38, 38, .75);background-blend-mode: lighten;">
-      <h1 class="w3-text-pink">Rhys Bratti</h1>
-      <h3 class="small">Software Engineer</h3>
-    </div>
-  
-    <div class="custom-dynamic-card" style="margin-top: 715px">
-      <div class="custom-dynamic-card-inner">
-        <div class="custom-dynamic-card-front">
-          <h1 style="margin-top: 50px;">Experience</h1>
-          <p>(hover to flip)</p>
-        </div>
-        <div class="custom-dynamic-card-back">
-          <h3 style="margin-top: 100px;">7 years experiece developing with Java</h3>
-          <h3>5 years experience as a software engineer</h3>
-          <h3>4 years experience developing RESTful APIs</h3> 
-          <h3>2 years experience with Spring Boot</h3>
-          <a class="medium-text" href="/resume">View my full resume</a>
+    <div class="w3-container custom-text-body" style="text-align: center;height: 100px;background-color: transparent;padding-top: 400px;">
+        <h1 class="extra-large" style="font-family: 'Abril Fatface', serif;">Hi, I'm <span class="custom-text-accent">Rhys Bratti.</span></h1>
+        <h2 style="font-family: 'Lato', serif;line-height: .3;">${ s o f t w a r e _ e n g i n e e r }</h2>
+      </div>
+    <div style="background-color: transparent;padding-top: 1000px">
+      <div class="custom-dynamic-card">
+        <div class="custom-dynamic-card-inner">
+          <div class="custom-dynamic-card-front">
+            <h1 style="margin-top: 50px;">Experience</h1>
+            <p>(hover to flip)</p>
+          </div>
+          <div class="custom-dynamic-card-back">
+            <h3 style="margin-top: 100px;">7 years experiece developing with Java</h3>
+            <h3>5 years experience as a software engineer</h3>
+            <h3>4 years experience developing RESTful APIs</h3> 
+            <h3>2 years experience with Spring Boot</h3>
+            <a class="medium-text" href="/resume">View my full resume</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="custom-dynamic-card" style="margin-top: 715px">
-      <div class="custom-dynamic-card-inner">
-        <div class="custom-dynamic-card-front">
-          <h1 style="margin-top: 50px;">Seeking</h1>
-          <p>(hover to flip)</p>
-        </div>
-        <div class="custom-dynamic-card-back">
-          <h3 style="margin-top: 100px;">A team I can rely on</h3>
-          <h3>An environment to learn and grow</h3>
-          <h3>A product I can contribute positively to</h3>
-          <h3>Technologies I'm not already comfortable with</h3>
-          <a class="medium-text" href="/about-me">Learn more about me and what I'm looking for</a>
+      <div class="custom-dynamic-card">
+        <div class="custom-dynamic-card-inner">
+          <div class="custom-dynamic-card-front">
+            <h1 style="margin-top: 50px;">About</h1>
+            <p>(hover to flip)</p>
+          </div>
+          <div class="custom-dynamic-card-back">
+            <div style="padding: 30px;margin-top: 50px;">
+              <h5>Hi there!</h5> 
+              <h5>I'm a software engineer with 5 years industry experience</h5>
+              <h5>I excel at using creative problem solving to provide efficient solutions to complex problems.</h5>
+              <h5>I pride myself with being a quick learner, able to adapt to new technologies in a team oriented environment.</h5>
+              <h5>Leveraging my industry experience along with my unique set of skills helps me exceed company expectations.</h5>
+              <a class="medium-text" href="/about-me">Learn more about me and what I'm looking for</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="custom-dynamic-card" style="margin-top: 715px">
-      <div class="custom-dynamic-card-inner">
-        <div class="custom-dynamic-card-front">
-          <h1 style="margin-top: 50px;">Contact</h1>
-          <p>(hover to flip)</p>
+      <div class="custom-dynamic-card">
+        <div class="custom-dynamic-card-inner">
+          <div class="custom-dynamic-card-front">
+            <h1 style="margin-top: 50px;">Contact</h1>
+            <p>(hover to flip)</p>
+          </div>
+          <div class="custom-dynamic-card-back">
+            <h3 style="margin-top: 100px;"><i class="fa fa-phone fa-fw w3-large custom-text-body"></i>{{ .Phone }}</h3>
+            <h3><i class="fa fa-envelope fa-fw  w3-large custom-text-body"></i>{{ .Email }}</h3>
+            <h3><i class="fa fa-linkedin fa-fw w3-large custom-text-body"></i><a class="medium-ish-text" href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></h3>
+            <a class="medium-text" href="/contact">Contact me</a>
+          </div>
         </div>
-        <div class="custom-dynamic-card-back">
-          <h3 style="margin-top: 100px;">Email: <a class="large-text" href="mailto:rhysbratti@gmail.com">{{printf "%s" .Email}}</a> </h3>
-          <h3>Phone: {{printf "%s" .Phone}}</h3>
-          <h3>Linkedin: <a class="large-text" href="https://www.linkedin.com/in/chrisbratti" target="_blank">chrisbratti</a></h3> 
-          <a class="medium-text" href="/contact">Contact me</a>
-        </div>
-      </div>
+      </div>  
     </div>
-    
-    
   <!-- End Grid -->
   </div>
   
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container custom-background w3-center w3-margin-top w3-text-pink">
-  <p class="custom-text-body">Find me on Linkedin</p>
-  <i class="fa fa-linkedin w3-text-pink w3-hover-opacity"></i>
-  <p class="custom-text-body">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container  w3-center w3-margin-top" style="background-color: transparent;">
+  <p>Find me on Linkedin</p>
+  <i class="fa fa-linkedin custom-text-accent w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
