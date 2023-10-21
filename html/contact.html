@@ -19,7 +19,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card">
+  <div class="w3-bar custom-nav w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
@@ -69,9 +69,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                     <label>Message:</label><br />
                     <textarea class="contact" name="message" placeholder="You're the best candidate we've ever seen..."></textarea><br />
                     {{if .Success}}
-                        <p class="w3-text-pink">Your message has been sent. I'll get back to you as soon as possible!</p>
+                        <p class="custom-text-accent">Your message has been sent. I'll get back to you as soon as possible!</p>
                     {{else}}
-                        <input class="w3-button w3-pink" type="submit" value="Send message">
+                        <input class="w3-button custom-accent-color" type="submit" value="Send message">
                     {{end}}
                     </form>
             </div>
@@ -82,9 +82,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-container w3-card custom-card-background w3-margin-bottom" style="margin-top:25px">
       <div class="w3-container custom-text-body" style="text-align: left;">
           <h2>Or reach me here!</h2>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-pink"></i>{{ .Phone }}</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-pink"></i>{{ .Email }}</p>
-          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-pink"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large custom-text-accent"></i>{{ .Phone }}</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large custom-text-accent"></i>{{ .Email }}</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large custom-text-accent"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
       </div>
   </div>
     

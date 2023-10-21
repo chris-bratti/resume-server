@@ -19,7 +19,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card">
+  <div class="w3-bar custom-nav w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
@@ -61,18 +61,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-pink"></i>Softare Engineer, Senior Consultant</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-pink"></i>Charlotte, NC</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-pink"></i>{{printf "%s" .Email}}</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-pink"></i>{{printf "%s" .Phone}}</p>
-          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-pink"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large custom-text-accent"></i>Software Engineer, Senior Consultant</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large custom-text-accent"></i>Charlotte, NC</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large custom-text-accent"></i>{{printf "%s" .Email}}</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large custom-text-accent"></i>{{printf "%s" .Phone}}</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large custom-text-accent"></i><a href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></p>
           <hr>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-pink"></i>Skills</b></p>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right custom-text-accent"></i>Skills</b></p>
           <ul class="w3-ul">
-            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">code</i> Java, Python, Bash</li>
-            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">bug_report</i> jUnit, AssertJ</li>
-            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">api</i> Spring Boot, RESTful APIs</li>
-            <li><i class="material-icons fa-fw w3-margin-right w3-large w3-text-pink">terminal</i> Docker, Git, Github</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large custom-text-accent">code</i> Java, Python, Bash</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large custom-text-accent">bug_report</i> jUnit, AssertJ</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large custom-text-accent">api</i> Spring Boot, RESTful APIs</li>
+            <li><i class="material-icons fa-fw w3-margin-right w3-large custom-text-accent">terminal</i> Docker, Git, Github</li>
           </ul>
           <br>
         </div>
@@ -85,49 +85,49 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird" style="max-width:1200px;margin-top:100px">
     
       <div class="w3-container w3-card custom-card-background w3-margin-bottom">
-        <h2 class="custom-text-body w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Work Experience</h2>
+        <h2 class="custom-text-body w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge custom-text-accent"></i>Work Experience</h2>
         <div class="w3-container custom-text-body">
-          <h4 class="w3-text-pink"><b>Booz Allen Hamilton</b></h4>
+          <h4 class="custom-text-accent"><b>Booz Allen Hamilton</b></h4>
           <h6 class="w3-opacity small"><b>Software Engineer, Senior Consultant</b></h6>
           <h6 class="w3-opacity small"><b>Software Engineer</b></h6>
-          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Aug 2021- <span class="w3-tag w3-pink w3-round">Current</span></h6>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right custom-text-accent"></i>Aug 2021- <span class="w3-tag custom-accent-color w3-round">Current</span></h6>
           <ul>
-            <li><span class="w3-text-pink">Develop</span> and support Spring Boot RESTful APIs for VA contracts</li>
-            <li><span class="w3-text-pink">Collaborate</span> with scrum team to drive business growth and client satisfaction through delivery of fully-tested products</li>
-            <li><span class="w3-text-pink">Analyze</span> user story requirements to create scalable and efficient code</li>
-            <li><span class="w3-text-pink">Handle</span> large scale functionality implementation as well as code architecture restructuring</li>
-            <li><span class="w3-text-pink">Spearheaded</span> load testing efforts using Gw3 fa-linkdinibana to allow for performance monitoring and alerting</li>
-            <li><span class="w3-text-pink">Successfully</span> migrated several API's from Kubernetes to D2 to allow for a smoother deployment process</li>
+            <li><span class="custom-text-accent">Develop</span> and support Spring Boot RESTful APIs for VA contracts</li>
+            <li><span class="custom-text-accent">Collaborate</span> with scrum team to drive business growth and client satisfaction through delivery of fully-tested products</li>
+            <li><span class="custom-text-accent">Analyze</span> user story requirements to create scalable and efficient code</li>
+            <li><span class="custom-text-accent">Handle</span> large scale functionality implementation as well as code architecture restructuring</li>
+            <li><span class="custom-text-accent">Spearheaded</span> load testing efforts using Gw3 fa-linkdinibana to allow for performance monitoring and alerting</li>
+            <li><span class="custom-text-accent">Successfully</span> migrated several API's from Kubernetes to D2 to allow for a smoother deployment process</li>
           </ul>
           <hr>
         </div>
 
         <div class="w3-container custom-text-body">
-          <h4 class="w3-text-pink"><b>The Hartford</b></h4>
+          <h4 class="custom-text-accent"><b>The Hartford</b></h4>
           <h6 class="w3-opacity small"><b>Associate Software Engineer</b></h6>
           <h6 class="w3-opacity small"><b>Special Applications Developer</b></h6>
-          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Jan 2019 - Aug 2021</h6>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right custom-text-accent"></i>Jan 2019 - Aug 2021</h6>
           <ul>
-            <li><span class="w3-text-pink">Supported</span> production of core insurance policy management application, PolicyCenter Developed new functionality to allow PolicyCenter to be a seamless user experience</li>
-            <li><span class="w3-text-pink">Integrated</span> PolicyCenter with other Hartford application through REST APIs</li>
-            <li><span class="w3-text-pink">Created</span> automated unit tests for APIs with Karate testing</li>
-            <li><span class="w3-text-pink">Diagnosed</span> bugs and defects to improve code design</li>
-            <li><span class="w3-text-pink">Collaborated</span> with Scrum Team </li>
+            <li><span class="custom-text-accent">Supported</span> production of core insurance policy management application, PolicyCenter Developed new functionality to allow PolicyCenter to be a seamless user experience</li>
+            <li><span class="custom-text-accent">Integrated</span> PolicyCenter with other Hartford application through REST APIs</li>
+            <li><span class="custom-text-accent">Created</span> automated unit tests for APIs with Karate testing</li>
+            <li><span class="custom-text-accent">Diagnosed</span> bugs and defects to improve code design</li>
+            <li><span class="custom-text-accent">Collaborated</span> with Scrum Team </li>
           </ul>
         </div>
       </div>
               
     <div class="w3-container w3-card custom-card-background">
-      <h2 class="custom-text-body w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Education</h2>
+      <h2 class="custom-text-body w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge custom-text-accent"></i>Education</h2>
         <div class="w3-container custom-text-body">
-          <h4 class="w3-text-pink"><b>University of North Carolina at Charlotte</b></h4>
-          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Graduated <span class="w3-text-pink">2018</span></h6>
+          <h4 class="custom-text-accent"><b>University of North Carolina at Charlotte</b></h4>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right custom-text-accent"></i>Graduated <span class="custom-text-accent">2018</span></h6>
           <p>Bachelor's of Computer Science, Artificial Intelligence</p>
           <hr>
         </div>
         <div class="w3-container custom-text-body">
-          <h4 class="w3-text-pink"><b>Rowan Cabarrus Community College</b></h4>
-          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right w3-text-pink"></i>Graduated <span class="w3-text-pink">2016</span></h6>
+          <h4 class="custom-text-accent"><b>Rowan Cabarrus Community College</b></h4>
+          <h6 class="custom-text-body"><i class="fa fa-calendar fa-fw w3-margin-right custom-text-accent"></i>Graduated <span class="custom-text-accent">2016</span></h6>
           <p>Associate's of Science</p>
         </div>
       </div>
@@ -141,9 +141,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container custom-card-background w3-center w3-margin-top w3-text-pink">
+<footer class="w3-container custom-card-background w3-center w3-margin-top custom-text-accent">
   <p class="custom-text-body">Find me on Linkedin</p>
-  <i class="fa fa-linkedin w3-text-pink w3-hover-opacity"></i>
+  <i class="fa fa-linkedin custom-text-accent w3-hover-opacity"></i>
   <p class="custom-text-body">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
