@@ -49,11 +49,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class=" w3-margin-top" style="margin-top:100px">
   
   <!-- The Grid -->
-  <div  style="margin-top: 45px;height: 1000px;background-color: transparent;">
+  <div class="w3-padding" style="margin-top: 45px;height: 1000px;background-color: transparent;">
 
     <div class="w3-container custom-text-body" style="text-align: center;height: 100px;background-color: transparent;padding-top: 400px;">
         <h1 class="extra-large" style="font-family: 'Abril Fatface', serif;">Hi, I'm <span class="custom-text-accent">Rhys Bratti.</span></h1>
-        <h2 style="font-family: 'Lato', serif;line-height: .3;">${ s o f t w a r e _ e n g i n e e r }</h2>
+        <h4 style="font-family: 'Lato', serif;line-height: .3;">${ s o f t w a r e _ e n g i n e e r }</h4>
       </div>
     <div style="background-color: transparent;padding-top: 1000px">
       <div class="custom-dynamic-card">
@@ -63,11 +63,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p>(hover to flip)</p>
           </div>
           <div class="custom-dynamic-card-back">
-            <h3 style="margin-top: 100px;">7 years experiece developing with Java</h3>
-            <h3>5 years experience as a software engineer</h3>
-            <h3>4 years experience developing RESTful APIs</h3> 
-            <h3>2 years experience with Spring Boot</h3>
-            <a class="medium-text" href="/resume">View my full resume</a>
+            <div class="dynamic-card-text">
+              <h3>7 years experiece developing with Java</h3>
+              <h3>5 years experience as a software engineer</h3>
+              <h3>4 years experience developing RESTful APIs</h3> 
+              <h3>2 years experience with Spring Boot</h3>
+              <a class="medium-text" href="/resume">View my full resume</a>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +81,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p>(hover to flip)</p>
           </div>
           <div class="custom-dynamic-card-back">
-            <div style="padding: 30px;margin-top: 50px;">
+            <div class="dynamic-card-text">
               <h5>Hi there!</h5> 
               <h5>I'm a software engineer with 5 years industry experience</h5>
               <h5>I excel at using creative problem solving to provide efficient solutions to complex problems.</h5>
@@ -98,10 +100,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p>(hover to flip)</p>
           </div>
           <div class="custom-dynamic-card-back">
-            <h3 style="margin-top: 100px;"><i class="fa fa-phone fa-fw w3-large custom-text-body"></i>{{ .Phone }}</h3>
-            <h3><i class="fa fa-envelope fa-fw  w3-large custom-text-body"></i>{{ .Email }}</h3>
-            <h3><i class="fa fa-linkedin fa-fw w3-large custom-text-body"></i><a class="medium-ish-text" href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></h3>
-            <a class="medium-text" href="/contact">Contact me</a>
+            <div class="dynamic-card-text">
+              <h3><i class="fa fa-phone fa-fw w3-large custom-text-body"></i>{{ .Phone }}</h3>
+              <h3><i class="fa fa-envelope fa-fw  w3-large custom-text-body"></i>{{ .Email }}</h3>
+              <h3><i class="fa fa-linkedin fa-fw w3-large custom-text-body"></i><a class="medium-ish-text" href="https://www.linkedin.com/in/chrisbratti" target="_blank">https://www.linkedin.com/in/chrisbratti</a></h3>
+              <a class="medium-text" href="/contact">Contact me</a>
+            </div>
           </div>
         </div>
       </div>  

@@ -8,6 +8,13 @@
 .custom-accent-darkened, .custom-accent-darkened:hover{color:#000!important;background-color:#3D7052!important}
 .custom-text-darkened, .custom-text-darkened:hover{color: #262626}
 
+.right-aligned{
+  width:33.33%;
+  right: 200px;
+  position: absolute;
+  margin-top: 15px;
+}
+
 .custom-nav, .custom-nav:hover{
   color: #262626!important;
   background-color: #3D7052!important;
@@ -22,7 +29,7 @@
 }
 
 .right-text{
-  position: absolute;
+  position: inherit;
   right: 10px;
   width: 62%;
   margin: 10px;
@@ -126,6 +133,55 @@ hr.thinline {
   align-self: flex-end;
 }
 
+@media screen and (max-width: 1500px) {
+  .left-image, .right-image, .right-aligned{
+    max-width: 0%;
+    max-height:0%;
+    visibility: hidden;
+  }
+  .left-text, .right-text{
+    vertical-align: top;
+    left: 0px;
+    position: inherit;
+    text-align: left;
+    width: 100%;
+    right: 0px;
+    padding: 50px
+  }
+  .about-dynamic-card{
+    min-height: fit-content;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left-text, .right-text{
+    vertical-align: top;
+    left: 0px;
+    position: inherit;
+    text-align: left;
+    width: 100%;
+    right: 0px;
+    padding: 50px;
+    overflow: scroll;
+  }
+  .about-dynamic-card{
+    min-height: 1000px;
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-text, .right-text{
+    overflow: scroll;
+  }
+  .about-dynamic-card{
+    min-height: 1250px;
+    max-width: 95%;
+    overflow: hidden;
+  }
+}
+
 
 
 .custom-dynamic-card {
@@ -173,6 +229,36 @@ hr.thinline {
 .custom-dynamic-card-back span{
   align-self: flex-end;
 }
+
+.dynamic-card-text {
+  padding: 30px;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .custom-dynamic-card{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-top: 10px;
+  }
+  .dynamic-card-text{
+    padding: 10px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .custom-dynamic-card{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-top: 10px;
+  }
+  .dynamic-card-text{
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+}
+
 
 span.centered {
   display: inline-block;
