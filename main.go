@@ -86,13 +86,14 @@ func (f neuteredReaddirFile) Readdir(count int) ([]os.FileInfo, error) {
 }
 
 func sendEmail(contactDetails ContactDetails) error{
-	sendAddress := os.Getenv("EMAIL")
+	sendAddress := os.Getenv("FROM_EMAIL")
+	toAddress := os.Getenv("EMAIL")
 	auth := smtp.PlainAuth("", sendAddress, os.Getenv("KEY"), "smtp.gmail.com")
 
-	to := []string{sendAddress}
+	to := []string{toAddress}
 
 	msg := "From: " + contactDetails.FirstName + " " + contactDetails.LastName + "\r\n" +
-	"Subject: New message from Resume-Server!\r\n" +
+	"Subject: New message from RhysBratti.com!\r\n" +
 	"Message contents: \r\n" +
 	contactDetails.Message + "\r\n" +
 	"Reply email: " + contactDetails.Email
