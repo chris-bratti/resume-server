@@ -17,33 +17,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <body class="parallax">
 
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar custom-nav w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="/resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">ABOUT <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="/about-me" class="w3-bar-item w3-button">ME</a>
-        <a href="/about-site" class="w3-bar-item w3-button">THIS SITE</a>
-      </div>
-    </div>
-    <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-pink w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">HOME</a>
-  <a href="/resume" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">RESUME</a>
-  <a href="/about-me" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT ME</a>
-  <a href="/about-site" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">ABOUT SITE</a>
-  <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">CONTACT ME</a>
-</div>
-
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
 
 <!-- Page Container -->
 <div class=" w3-margin-top" style="margin-top:100px">
@@ -147,6 +122,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       modal.style.display = "none";
     }
   }
+
+  $(function(){
+    $("#nav-placeholder").load("./html/nav.html");
+  });
 
   </script>
 
