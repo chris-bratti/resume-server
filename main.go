@@ -120,13 +120,11 @@ func main() {
 	personalInfo = PersonalInfo{os.Getenv("EMAIL"), os.Getenv("PHONE"), false}
 
 	fs := justFilesFilesystem{http.Dir("html")}
-
 	assets := justFilesFilesystem{http.Dir("assets")}
 	media := justFilesFilesystem{http.Dir("media")}
 
 	assetsFileServer := http.FileServer(assets)
 	mediaFileServer := http.FileServer(media)
-
 	fileServer := http.FileServer(fs)
 
 	mux := http.NewServeMux()
