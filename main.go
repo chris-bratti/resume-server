@@ -109,8 +109,18 @@ func main() {
 
 	err := godotenv.Load("./env/.env")
 	if err != nil {
-		log.Println("Error loading .env file")
+		log.Println("Warning: Error loading .env file")
+		log.Println(".env file should be located in ./env/.env")
+		log.Println("If running locally, run the make-configs.sh script and then fill in key values")
+		log.Println("If running in Docker, mount /env volume to container using -v /path/to/env:/app/env")
 	}
+
+	_, err = os.Stat("media")
+    if os.IsNotExist(err) {
+        log.Println("Warning: No /media folder found. This will cause images to not load")
+		log.Println("If running locally, run the make-configs.sh script to generate /media folder, then place photos in there")
+		log.Println("If running in Docker, mount /media volume to container using -v /path/to/media:/app/media")
+    }
 
 	port := os.Getenv("PORT")
 	if port == "" {
