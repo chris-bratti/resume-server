@@ -14,8 +14,6 @@ FROM_EMAIL=
 
 KEY=
 
-PHONE=
-
 EOF
     fi
 fi

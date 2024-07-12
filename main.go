@@ -18,7 +18,6 @@ type ContactDetails struct {
 
 type PersonalInfo struct {
 	Email	string
-	Phone	string
 	Success bool
 }
 
@@ -127,7 +126,7 @@ func main() {
 		port = "8080"
 	}
 
-	personalInfo = PersonalInfo{os.Getenv("EMAIL"), os.Getenv("PHONE"), false}
+	personalInfo = PersonalInfo{os.Getenv("EMAIL"), false}
 
 	fs := justFilesFilesystem{http.Dir("html")}
 	assets := justFilesFilesystem{http.Dir("assets")}

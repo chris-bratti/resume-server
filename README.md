@@ -22,7 +22,6 @@ FROM_EMAIL=smtp_address@gmail.com
 
 KEY=gmail smtp code here
 
-PHONE=(123) 456 7890
 ```
 
 ### Docker
