@@ -52,7 +52,7 @@ services:
 
 You can run it locally if you would like, though it might be a bit more hassle. Follow these steps to do so:
 - [Install go](https://go.dev/doc/install)
-- `git clone https://github.com/rhysbratti/resume-server.git`
+- `git clone https://github.com/chris-bratti/resume-server.git`
 - Run `make-configs.sh` script
     - This will generate the skeleton `.env` file as well as the /media directory
 - `go build go.main`
