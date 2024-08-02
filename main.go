@@ -92,7 +92,7 @@ func sendEmail(contactDetails ContactDetails) error{
 	to := []string{toAddress}
 
 	msg := "From: " + contactDetails.FirstName + " " + contactDetails.LastName + "\r\n" +
-	"Subject: New message from RhysBratti.com!\r\n" +
+	"Subject: New message from ChrisBratti.com!\r\n" +
 	"Message contents: \r\n" +
 	contactDetails.Message + "\r\n" +
 	"Reply email: " + contactDetails.Email
